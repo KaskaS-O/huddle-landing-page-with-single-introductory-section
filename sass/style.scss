@@ -14,14 +14,23 @@ body {
         min-height: 700px;
     }
 
-    @media (min-width: 1200px) {
+    @media (min-width: 1200px) and (orientation: landscape) {
         background-image: url(../images/bg-desktop.svg);
+        background-size: cover;
+
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
     }
 }
 
 
 .intro {
     width: 100%;
+
+    @media (min-width: 1200px) and (orientation: landscape) {
+        width: 52%;
+    }
 
 
     &__logo {
@@ -33,12 +42,20 @@ body {
             margin-bottom: 4%;
         }
 
+        @media (min-width: 1200px) and (orientation: landscape) {
+            padding: 6% 8%;
+    }
+
         img {
             height: 3em;
 
             @media (min-width: 768px) {
                 height: 4em;
             }
+
+            @media (min-width: 1200px) and (orientation: landscape) {
+                height: 5em;
+        }
         }
 
     }
@@ -47,8 +64,22 @@ body {
 
         img {
             width: 80%;
+
+            @media (min-width: 1200px) and (orientation: landscape) {
+                width: 100%;
         }
+        }
+
+        @media (min-width: 1200px) and (orientation: landscape) {
+            padding-left: 8%;
+    }
         
+    }
+}
+
+@media (min-width: 1200px) and (orientation: landscape) {
+    main {
+        width: 48%;
     }
 }
 
@@ -64,6 +95,16 @@ body {
             font-size: 3em;
             padding: 18% 15% 4%;
         }
+
+        @media (min-width: 1200px) and (orientation: landscape) {
+            padding: 24% 15% 3% 8%;
+            font-size: 3.8em;
+            line-height: 150%;
+        }
+
+        @media (min-width: 1440px) and (orientation: landscape) {
+            padding: 10% 20% 3% 8%;
+        }
     }
 
     &__text {
@@ -76,6 +117,17 @@ body {
             font-size: 1.8em;
             padding: 0 12%;
         }
+
+        @media (min-width: 1200px) and (orientation: landscape) {
+            padding: 0 10% 0 8%;
+            font-size: 1.7em;
+        }
+
+        @media (min-width: 1440px) and (orientation: landscape) {
+            padding: 0 18% 2% 8%;
+            font-size: 1.8em;
+        }
+        
     }
 
     .btn--about {
@@ -84,10 +136,32 @@ body {
         height: 40px;
         border: none;
         border-radius: 20px;
+        box-shadow: 5px 5px 20px -6px black;
         background-color: white;
         color: $violet;
         font-family: 'Poppins', sans-serif;
         font-size: 1.2em;
+        transition: 0.2s;
+
+        &:hover {
+            background-color: $magenta;
+            color: white;
+            cursor: pointer;
+        }
+
+        @media (min-width: 1200px) and (orientation: landscape) {
+            margin: 3% auto 0 8%;
+            width: 190px;
+            height: 52px;
+            border-radius: 26px;
+            font-size: 1.7em;
+        }
+
+        @media (min-width: 1440px) and (orientation: landscape) {
+            width: 200px;
+            height: 56px;
+            border-radius: 28px;
+        }
     }
 }
 
@@ -102,21 +176,38 @@ body {
         margin-top: 0;
     }
 
+    @media (min-width: 1200px) and (orientation: landscape) {
+        position: absolute;
+        right: 5%;
+        top: 90%;
+        margin: 0;
+    }
+
     &__social {
         height: 28px;
         width: 28px;
         border: 1px solid white;
         border-radius: 50%;
+        transition: 0.2s;
+
+        &:hover {
+            color: $magenta;
+            border-color: $magenta;
+            cursor: pointer;
+        }
 
         @media (min-width: 768px) {
             height: 36px;
             width: 36px;
         }
 
-        a {
-            color: white;
-            font-size: 14px;
+        @media (min-width: 1200px) and (orientation: landscape) {
             text-align: center;
+        }
+
+        a {
+            color: inherit;
+            font-size: 14px;
             line-height: 28px;
 
             @media (min-width: 768px) {
@@ -134,11 +225,26 @@ body {
     font-size: 11px; 
     text-align: center; 
 
+    @media (min-width: 1200px) and (orientation: landscape) {
+        padding: 1%;
+}
+
     @media (min-width: 768px) {
         font-size: 12px;
     }
 
+    @media (min-width: 1200px) and (orientation: landscape) {
+        position: absolute;
+        bottom: 0%;
+    }
+
     a {
          color: white; 
+    }
+}
+
+@media (min-width: 1200px) and (orientation: landscape) {
+    footer {
+        width: 100%;
     }
 }
