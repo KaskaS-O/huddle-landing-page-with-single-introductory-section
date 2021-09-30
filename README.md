@@ -25,7 +25,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/KaskaS-O/four-card-feature-section](https://github.com/KaskaS-O/four-card-feature-section)
+- Solution URL: [https://github.com/KaskaS-O/huddle-landing-page-with-single-introductory-section/](https://github.com/KaskaS-O/huddle-landing-page-with-single-introductory-section/)
 - Live Site URL: [https://kaskas-o.github.io/huddle-landing-page-with-single-introductory-section/](https://kaskas-o.github.io/huddle-landing-page-with-single-introductory-section/)
 
 ## My process
