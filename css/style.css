@@ -28,14 +28,32 @@ body {
   min-height: 370px;
 }
 
+@media (min-width: 768px) {
+  .intro {
+    min-height: 700px;
+  }
+}
+
 .intro__logo {
   text-align: left;
   padding: 8% 10%;
   margin-bottom: 8%;
 }
 
+@media (min-width: 768px) {
+  .intro__logo {
+    margin-bottom: 4%;
+  }
+}
+
 .intro__logo img {
   height: 3em;
+}
+
+@media (min-width: 768px) {
+  .intro__logo img {
+    height: 4em;
+  }
 }
 
 .intro__image img {
@@ -51,11 +69,25 @@ body {
   font-size: 2.2em;
 }
 
+@media (min-width: 768px) {
+  .about__title {
+    font-size: 3em;
+    padding: 6% 15%;
+  }
+}
+
 .about__text {
   padding: 0 10%;
   font-size: 1.6em;
   line-height: 150%;
   opacity: 0.9;
+}
+
+@media (min-width: 768px) {
+  .about__text {
+    font-size: 1.8em;
+    padding: 0 12%;
+  }
 }
 
 .about .btn--about {
@@ -81,11 +113,24 @@ body {
           justify-content: space-between;
 }
 
+@media (min-width: 768px) {
+  .socials {
+    width: 140px;
+  }
+}
+
 .socials__social {
   height: 28px;
   width: 28px;
   border: 1px solid white;
   border-radius: 50%;
+}
+
+@media (min-width: 768px) {
+  .socials__social {
+    height: 36px;
+    width: 36px;
+  }
 }
 
 .socials__social a {
@@ -95,11 +140,24 @@ body {
   line-height: 28px;
 }
 
+@media (min-width: 768px) {
+  .socials__social a {
+    font-size: 16px;
+    line-height: 36px;
+  }
+}
+
 .attribution {
   width: 100%;
   padding: 3%;
   font-size: 11px;
   text-align: center;
+}
+
+@media (min-width: 768px) {
+  .attribution {
+    font-size: 12px;
+  }
 }
 
 .attribution a {
