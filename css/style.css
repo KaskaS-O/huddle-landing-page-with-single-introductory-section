@@ -12,26 +12,39 @@ body {
   color: white;
 }
 
+@media (min-width: 1200px) {
+  body {
+    text-align: left;
+  }
+}
+
 h1 {
   font-family: 'Poppins', sans-serif;
 }
 
 body {
   background-color: #674baf;
-}
-
-.intro {
-  width: 100%;
   background-image: url(../images/bg-mobile.svg);
-  background-size: cover;
-  background-position: left;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
   min-height: 370px;
 }
 
 @media (min-width: 768px) {
-  .intro {
+  body {
     min-height: 700px;
   }
+}
+
+@media (min-width: 1200px) {
+  body {
+    background-image: url(../images/bg-desktop.svg);
+  }
+}
+
+.intro {
+  width: 100%;
 }
 
 .intro__logo {
@@ -65,14 +78,15 @@ body {
 }
 
 .about__title {
-  padding: 8% 12% 4%;
+  padding: 15% 12% 4%;
   font-size: 2.2em;
+  line-height: 160%;
 }
 
 @media (min-width: 768px) {
   .about__title {
     font-size: 3em;
-    padding: 6% 15%;
+    padding: 18% 15% 4%;
   }
 }
 
@@ -116,6 +130,7 @@ body {
 @media (min-width: 768px) {
   .socials {
     width: 140px;
+    margin-top: 0;
   }
 }
 
