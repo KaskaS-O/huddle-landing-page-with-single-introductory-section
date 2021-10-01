@@ -28,13 +28,7 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: top;
-  min-height: 370px;
-}
-
-@media (min-width: 768px) {
-  body {
-    min-height: 700px;
-  }
+  min-height: 100vh;
 }
 
 @media (min-width: 1200px) and (orientation: landscape) {
@@ -70,7 +64,7 @@ body {
 
 @media (min-width: 768px) {
   .intro__logo {
-    margin-bottom: 4%;
+    margin-bottom: 0;
   }
 }
 

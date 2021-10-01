@@ -8,11 +8,7 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: top;
-    min-height: 370px;
-
-    @media (min-width: 768px) {
-        min-height: 700px;
-    }
+    min-height: 100vh;
 
     @media (min-width: 1200px) and (orientation: landscape) {
         background-image: url(../images/bg-desktop.svg);
@@ -39,7 +35,7 @@ body {
         margin-bottom: 8%;
 
         @media (min-width: 768px) {
-            margin-bottom: 4%;
+            margin-bottom: 0;
         }
 
         @media (min-width: 1200px) and (orientation: landscape) {
